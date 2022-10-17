@@ -16,25 +16,8 @@ const {NotImplementedError} = require('../extensions/index.js');
  *
  //  */
 function renameFiles(names) {
-    const a = [];
-    names.reduce((acc, item) => {
-
-        const find = a.find((el) => {
-            if (el === item) {
-                return el;
-            }
-        });
-        if (find) {
-            a.push(find + '(1)');
-        } else {
-
-            console.log('find', find);
-            a.push(item);
-        }
-        console.log(a);
-        return acc;
-    }, [])
-    return a;
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
 }
 
 console.log(renameFiles(['doc', 'doc', 'image', 'doc(1)', 'doc']))
@@ -48,4 +31,4 @@ module.exports = {
 //  const result = arr.reduce((acc,item) => {
 //   return {...acc, `a+item`:item};
 // },{})
-// console.log(result);
+// console.log(result);`
